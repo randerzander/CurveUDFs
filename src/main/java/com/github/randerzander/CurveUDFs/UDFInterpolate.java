@@ -1,4 +1,4 @@
-package com.github.randerzander.UDFInterpolator;
+package com.github.randerzander.CurveUDFs;
  
 import org.apache.hadoop.hive.ql.exec.UDF;
 
@@ -13,7 +13,7 @@ import java.util.Map;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
-public final class UDFInterpolator extends UDF {
+public final class UDFInterpolate extends UDF {
   public ArrayList<Double> evaluate(ArrayList<Double> x1, ArrayList<Double> y1, String method) {
     //Use a sorted treemap to eliminate duplicate points
     SortedMap<Double, Double> curve = new TreeMap<Double, Double>();

@@ -3,12 +3,12 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.github.randerzander</groupId>
-  <artifactId>UDFInterpolator</artifactId>
+  <artifactId>CurveUDFs</artifactId>
   <version>0.1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>UDFInterpolator</name>
-  <url>http://github.com/randerzander/UDFInterpolator</url>
+  <name>CurveUDFs</name>
+  <url>http://github.com/randerzander/CurveUDFs</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
