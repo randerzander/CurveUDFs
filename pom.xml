@@ -10,45 +10,45 @@
   <name>CurveUDFs</name>
   <url>http://github.com/randerzander/CurveUDFs</url>
 
+  <repositories>
+    <repository>
+      <id>hortonworks</id>
+      <url>http://repo.hortonworks.com/content/repositories/releases/</url>
+    </repository>   
+    <repository>
+      <id>repo.hortonworks.com-jetty</id>
+      <name>Hortonworks Jetty Maven Repository</name>
+      <url>http://repo.hortonworks.com/content/repositories/jetty-hadoop/</url>
+    </repository>
+  </repositories> 
+
   <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  <hdp.version>2.4.0.0-169</hdp.version>
   </properties>
+
   <dependencies>
     <dependency>
       <groupId>org.apache.hive</groupId>
       <artifactId>hive-exec</artifactId>
-      <version>0.13.0</version>
+      <version>1.2.1000.${hdp.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.hadoop</groupId>
       <artifactId>hadoop-common</artifactId>
-      <version>2.4.0</version>
+      <version>2.7.1.${hdp.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-lang3</artifactId>
       <version>3.0</version>
     </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-math3</artifactId>
+      <version>3.5</version>
+    </dependency>
   </dependencies>
 
-  <repositories>
-    <repository>
-      <releases>
-        <enabled>true</enabled>
-        <updatePolicy>always</updatePolicy>
-        <checksumPolicy>warn</checksumPolicy>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-        <updatePolicy>never</updatePolicy>
-        <checksumPolicy>fail</checksumPolicy>
-      </snapshots>
-      <id>HDPReleases</id>
-      <name>HDP Releases</name>
-      <url>http://repo.hortonworks.com/content/repositories/releases/</url>
-      <layout>default</layout>
-    </repository>
-  </repositories> 
   <build>
     <plugins>
       <plugin>
